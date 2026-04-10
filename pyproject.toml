@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "typer-companion"
+version = "0.1.0"
+description = "Wizard-first orchestration helpers for Typer."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+  { name = "Hyperdrift" }
+]
+keywords = [
+  "typer",
+  "cli",
+  "wizard",
+  "orchestration",
+  "developer-tools"
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Utilities"
+]
+
+[project.urls]
+Homepage = "https://github.com/hyperdrift-io/typer-companion"
+Repository = "https://github.com/hyperdrift-io/typer-companion"
+Documentation = "https://hyperdrift.io/blog/typer-companion-missing-wizard-layer"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
